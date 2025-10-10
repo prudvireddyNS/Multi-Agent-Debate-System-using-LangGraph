@@ -79,8 +79,8 @@ The `DebateState` TypedDict tracks:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd multi-agent-debate-system
+   git clone https://github.com/prudvireddyNS/Multi-Agent-Debate-System-using-LangGraph.git
+   cd Multi-Agent-Debate-System-using-LangGraph
    ```
 
 2. **Create a virtual environment**
@@ -98,7 +98,7 @@ The `DebateState` TypedDict tracks:
    
    Create a `.env` file in the project root:
    ```env
-   GOOGLE_API_KEY1=your_google_api_key_here
+   GOOGLE_API_KEY=your_google_api_key_here
    ```
 
 ## 🎮 Usage

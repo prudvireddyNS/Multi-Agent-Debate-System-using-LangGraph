@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Validate API key
-if not os.getenv("GOOGLE_API_KEY1"):
-    raise ValueError("GOOGLE_API_KEY1 not found in environment variables. Please check your .env file.")
+if not os.getenv("GOOGLE_API_KEY"):
+    raise ValueError("GOOGLE_API_KEY not found in environment variables. Please check your .env file.")
 
 # Initialize logging
 LOG_FILE = f"debate_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
@@ -173,7 +173,7 @@ def get_llm():
         return ChatGoogleGenerativeAI(
             model=config.model,
             temperature=config.temperature,
-            api_key=os.getenv("GOOGLE_API_KEY1"),
+            api_key=os.getenv("GOOGLE_API_KEY"),
             timeout=30,
             max_retries=2
         )
